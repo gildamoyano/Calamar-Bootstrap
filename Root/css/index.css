@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #2a9d8f
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1080px;
+    margin:0 auto;
+    padding: 1em;
+}
+
+header .navegación {
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 2rem;
+    font-weight: bolder;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    flex-basis: 20%;
+}
+
+header .menu {
+    justify-content: space-between;
+    flex-basis: 70%;
+}
+
+a:hover {
+    color: white;
+}
+
+header .menu__item:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to left,#f4a261,#f1c0e8);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 35px;
+    color: white;
+    margin-left: 1em;
+}
+
+.texto {
+    padding: 2em;
+    margin-right: 13em;
+    margin-left: 15em;
+}
+
+.título-calamar {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-principal{
+    padding: 2em;
+    animation-duration: 3s;
+    animation-name: slidein;
+    padding-bottom: 3em;
+    padding-top: 2em;
+}
+
+footer {
+    color: white;
+    background-color: #264653;
+    height: 14vh;
+} 
+
+.pie-página {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+@media screen and (max-width: 576px) {
+    .menu__item {
+        font-size: 8px;
+    }
+
+    h1 {
+        font-size: 18px;    
+    }
+
+    h4 {
+        font-size: 16px;
+    }        
+
+    .texto {
+        font-size: 10px;
+    }
+    .foto-principal{
+        width: 90%;
+        height: auto;
+    }
+
+    .pie-página {
+        font-size: 8px;
+    }
+}
